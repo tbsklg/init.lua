@@ -32,16 +32,19 @@ return require('packer').startup(function(use)
 
     -- Git integration with Fugitive
     use 'tpope/vim-fugitive'
-
-    -- LSP support
-    use {
-        'neovim/nvim-lspconfig'
-    }
+    
     use {
         "folke/which-key.nvim",
         config = function()
             require("which-key").setup {}
         end
+    }
+    
+    -- LSP support
+    use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
     }
 
     -- Autocompletion with nvim-cmp
