@@ -76,5 +76,8 @@ return require('packer').startup(function(use)
 
     -- GitHub Copilot support
     use 'github/copilot.vim'
+    
+    -- File explorer
+    use 'nvim-tree/nvim-tree.lua'
 end)
 
