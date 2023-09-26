@@ -99,4 +99,7 @@ return require('packer').startup(function(use)
 
     -- File explorer
     use 'nvim-tree/nvim-tree.lua'
+
+    -- Git decorations
+    use 'lewis6991/gitsigns.nvim'
 end)
