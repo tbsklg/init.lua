@@ -102,4 +102,7 @@ return require('packer').startup(function(use)
 
     -- Git decorations
     use 'lewis6991/gitsigns.nvim'
+
+    -- Detect tabstop and shiftwidth automatically
+    use 'tpope/vim-sleuth'
 end)
