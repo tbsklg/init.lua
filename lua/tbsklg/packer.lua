@@ -5,6 +5,8 @@ return require('packer').startup(function(use)
     -- Packer.nvim itself
     use 'wbthomason/packer.nvim'
 
+    use 'christoomey/vim-tmux-navigator'
+
     -- Essential plugins
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
