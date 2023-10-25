@@ -48,8 +48,5 @@ vim.keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>", { desc = "Fin
 
 vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", { desc = "Restart LSP" })
 
--- nvim-comment
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git, { desc = "Git status" })
-
 -- undotree
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "Toggle undotree" })
