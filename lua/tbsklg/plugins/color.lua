@@ -3,9 +3,9 @@ return {
 	config = function()
 		require("rose-pine").setup({
 			--- @usage 'auto'|'main'|'moon'|'dawn'
-			variant = "moon",
+			variant = "main",
 			--- @usage 'main'|'moon'|'dawn'
-			dark_variant = "main",
+			dark_variant = "moon",
 			disable_italics = true,
 		})
 
