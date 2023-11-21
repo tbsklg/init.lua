@@ -5,5 +5,6 @@ return {
 		fold_open = "",
 		fold_closed = "",
 		auto_open = true,
+		auto_close = true,
 	},
 }
