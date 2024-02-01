@@ -32,6 +32,7 @@ vim.keymap.set("n", "<leader>tp", ":tabp<CR>", { desc = "Previous tab" })
 
 -- nvim-tree
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle nvim-tree" })
+vim.keymap.set("n", "<leader>fr", ":NvimTreeFindFile<CR>", {})
 
 -- telescope
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
