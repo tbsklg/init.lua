@@ -14,4 +14,6 @@ return {
 
 	-- Detect tabstop and shiftwidth automatically
 	"tpope/vim-sleuth",
+
+	"folke/zen-mode.nvim",
 }

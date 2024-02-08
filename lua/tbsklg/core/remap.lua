@@ -51,3 +51,5 @@ vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", { desc = "Restart LSP" })
 
 -- undotree
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "Toggle undotree" })
+
+vim.keymap.set("n", "<leader>z", "<cmd>ZenMode<cr>", { desc = "Toggle zen mode" })
