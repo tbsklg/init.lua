@@ -6,11 +6,6 @@ return {
 	},
 	config = function()
 		local mason = require("mason")
-
-		local mason_lspconfig = require("mason-lspconfig")
-
-		local mason_tool_installer = require("mason-tool-installer")
-
 		mason.setup({
 			ui = {
 				icons = {
@@ -21,6 +16,7 @@ return {
 			},
 		})
 
+		local mason_lspconfig = require("mason-lspconfig")
 		mason_lspconfig.setup({
 			ensure_installed = {
 				"tsserver",
@@ -33,11 +29,13 @@ return {
 			automatic_installation = true,
 		})
 
+		local mason_tool_installer = require("mason-tool-installer")
 		mason_tool_installer.setup({
 			ensure_installed = {
-				"prettier", -- prettier formatter
-				"stylua", -- lua formatter
-				"eslint_d", -- js linter
+				"prettier",
+				"stylua",
+				"eslint",
+				"eslint_d",
 			},
 		})
 	end,
