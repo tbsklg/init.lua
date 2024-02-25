@@ -24,6 +24,7 @@ return {
 				"cssls",
 				"svelte",
 				"lua_ls",
+				"pyright",
 			},
 
 			automatic_installation = true,
