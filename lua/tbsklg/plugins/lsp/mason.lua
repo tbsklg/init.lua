@@ -22,7 +22,6 @@ return {
 				"tsserver",
 				"html",
 				"cssls",
-				"svelte",
 				"lua_ls",
 				"pyright",
 			},
