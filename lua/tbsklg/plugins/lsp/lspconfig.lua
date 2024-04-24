@@ -15,7 +15,6 @@ return {
 		local on_attach = function(_, bufnr)
 			opts.buffer = bufnr
 
-			-- keymap
 			keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", { desc = "Show references" })
 			keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
 			keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", { desc = "Show definitions" })
@@ -63,19 +62,21 @@ return {
 			virtual_text = true,
 		})
 
-		-- configure html server
 		lspconfig["html"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
 
-		-- configure typescript server with plugin
 		lspconfig["tsserver"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
+			init_options = {
+				preferences = {
+					disableSuggestions = true,
+				}
+			}
 		})
 
-		-- configure css server
 		lspconfig["cssls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
@@ -91,18 +92,15 @@ return {
 			on_attach = on_attach,
 		})
 
-		-- configure lua server (with special settings)
 		lspconfig["lua_ls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
-			settings = { -- custom settings for lua
+			settings = {
 				Lua = {
-					-- make the language server recognize "vim" global
 					diagnostics = {
 						globals = { "vim" },
 					},
 					workspace = {
-						-- make language server aware of runtime files
 						library = {
 							[vim.fn.expand("$VIMRUNTIME/lua")] = true,
 							[vim.fn.stdpath("config") .. "/lua"] = true,

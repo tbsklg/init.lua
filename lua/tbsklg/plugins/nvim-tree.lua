@@ -1,17 +1,20 @@
 return {
 	"nvim-tree/nvim-tree.lua",
-	dependencies = { "nvim-tree/nvim-web-devicons" },
+	dependencies = {
+		"nvim-tree/nvim-web-devicons",
+	},
 	config = function()
 		local nvim_tree = require("nvim-tree")
 
 		vim.g.loaded_netrw = 1
 		vim.g.loaded_netrwPlugin = 1
 
-		--configure nvim tree
 		nvim_tree.setup({
 			view = {
 				width = 40,
-				relativenumber = true,
+				relativenumber = false,
+				adaptive_size = false,
+				preserve_window_proportions = true,
 			},
 			renderer = {
 				indent_markers = {
@@ -23,6 +26,15 @@ return {
 							arrow_closed = "",
 							arrow_open = "",
 						},
+						git = {
+							unstaged = "✗",
+							staged = "✓",
+							unmerged = "",
+							renamed = "➜",
+							untracked = "★",
+							deleted = "",
+							ignored = "◌",
+						},
 					},
 				},
 			},
@@ -30,9 +42,5 @@ return {
 				ignore = false,
 			},
 		})
-
-		-- keymaps
-		local keymap = vim.keymap
-		keymap.set("n", "<leader>ee", ":NvimTreeToggle<CR>", { desc = "Toggle NvimTree" })
 	end,
 }

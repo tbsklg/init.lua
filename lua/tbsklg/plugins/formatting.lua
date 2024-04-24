@@ -12,14 +12,8 @@ return {
 		local conform = require("conform")
 		conform.setup({
 			formatters_by_ft = {
-				javascript = { "standardjs" },
+				javascript = { "prettier" },
 				typescript = { "prettier" },
-				svelte = { "prettier" },
-				css = { "prettier" },
-				html = { "prettier" },
-				json = { "prettier" },
-				yaml = { "prettier" },
-				markdown = { "prettier" },
 				lua = { "stylua" },
 			},
 			format_on_save,
@@ -27,6 +21,6 @@ return {
 
 		vim.keymap.set({ "n", "v" }, "<leader>mp", function()
 			conform.format(format_on_save)
-		end, { desc = "format file or range (in visual mode)" })
+		end, { desc = "Format file or range (in visual mode)" })
 	end,
 }
