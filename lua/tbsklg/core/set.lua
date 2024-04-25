@@ -1,5 +1,5 @@
 vim.opt.nu = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -29,6 +29,5 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 vim.opt.clipboard = "unnamedplus"
 
--- cursor line
-vim.opt.cursorline = true -- highlight the current cursor line
+vim.opt.cursorline = true
 

@@ -62,6 +62,11 @@ return {
 			virtual_text = true,
 		})
 
+		lspconfig["angularls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
 		lspconfig["html"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
