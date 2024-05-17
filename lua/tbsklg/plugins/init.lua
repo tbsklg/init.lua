@@ -1,19 +1,19 @@
 return {
-	"nvim-lua/plenary.nvim",
+    "nvim-lua/plenary.nvim",
 
-	"christoomey/vim-tmux-navigator",
+    "christoomey/vim-tmux-navigator",
 
-	-- gcc to comment lines
-	"numToStr/Comment.nvim",
+    -- gcc to comment lines
+    "numToStr/Comment.nvim",
 
-	-- Undo history with Undotree
-	"mbbill/undotree",
+    -- Undo history with Undotree
+    "mbbill/undotree",
 
-	-- Cellular automaton for fun
-	"eandrju/cellular-automaton.nvim",
+    -- Cellular automaton for fun
+    "eandrju/cellular-automaton.nvim",
 
-	-- Detect tabstop and shiftwidth automatically
-	"tpope/vim-sleuth",
+    -- Detect tabstop and shiftwidth automatically
+    "tpope/vim-sleuth",
 
-	"folke/zen-mode.nvim",
+    "folke/zen-mode.nvim",
 }

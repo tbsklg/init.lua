@@ -1,3 +1,3 @@
 return {
-	"luc-tielen/telescope_hoogle",
+    "luc-tielen/telescope_hoogle",
 }
