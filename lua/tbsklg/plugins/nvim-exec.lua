@@ -1,7 +1,8 @@
 return {
     "tbsklg/nvim-exec",
     lazy = true,
-    branch = "initial-setup",
+    branch = "main",
+    ft = "javascript",
     config = function()
         local nvim_exec = require("nvim-exec")
 
@@ -9,5 +10,4 @@ return {
             nvim_exec.run()
         end, { desc = "Execute code block after marker >>>" })
     end,
-    ft = "javascript",
 }
