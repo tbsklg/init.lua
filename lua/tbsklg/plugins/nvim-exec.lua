@@ -2,7 +2,7 @@ return {
     "tbsklg/nvim-exec",
     lazy = true,
     branch = "main",
-    ft = "javascript",
+    ft = { "javascript", "typescript" },
     config = function()
         local nvim_exec = require("nvim-exec")
 
