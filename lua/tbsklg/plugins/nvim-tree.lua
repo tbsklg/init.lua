@@ -15,6 +15,7 @@ return {
                 relativenumber = false,
                 adaptive_size = false,
                 preserve_window_proportions = true,
+                side = "right"
             },
             renderer = {
                 indent_markers = {

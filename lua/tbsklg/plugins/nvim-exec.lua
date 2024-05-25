@@ -1,7 +1,7 @@
 return {
     "tbsklg/nvim-exec",
     lazy = true,
-    branch = "main",
+    branch = "7-show-code-execution-result-in-window",
     ft = { "javascript", "typescript" },
     config = function()
         local nvim_exec = require("nvim-exec")
