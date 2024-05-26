@@ -1,10 +1,12 @@
 return {
     "tbsklg/nvim-exec",
-    lazy = true,
-    branch = "7-show-code-execution-result-in-window",
+    branch = "main",
     ft = { "javascript", "typescript" },
+    dependencies = {
+        "nvim-treesitter/nvim-treesitter",
+    },
     config = function()
-        local nvim_exec = require("nvim-exec")
+        local nvim_exec = require("nvim-exec").setup({})
 
         vim.keymap.set({ "n", "v" }, "<leader>r", function()
             nvim_exec.run()
