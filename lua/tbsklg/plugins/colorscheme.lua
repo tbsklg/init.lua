@@ -12,7 +12,7 @@ return {
                 },
             })
 
-            --vim.cmd([[colorscheme rose-pine]])
+            vim.cmd([[colorscheme rose-pine]])
         end,
     },
     {
@@ -22,7 +22,7 @@ return {
             require("neofusion").setup({})
 
             vim.o.background = "dark"
-            vim.cmd([[colorscheme neofusion]])
+            --vim.cmd([[colorscheme neofusion]])
         end,
     },
 }
