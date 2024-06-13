@@ -8,7 +8,7 @@ return {
 
             rose_pine.setup({
                 styles = {
-                    italic = true,
+                    italic = false,
                 },
             })
 
