@@ -23,7 +23,7 @@
   "neodev.nvim": { "branch": "main", "commit": "02893eeb9d6e8503817bd52385e111cba9a90500" },
   "neofusion.nvim": { "branch": "main", "commit": "4d3399f7247ebb7749d60af154aed91ece28f5aa" },
   "nvim-cmp": { "branch": "main", "commit": "a110e12d0b58eefcf5b771f533fc2cf3050680ac" },
-  "nvim-exec": { "branch": "10-plugin-should-work-with-lua-versions-newer-than-51", "commit": "91ab0c0f506ea7fca07c146009c7feb65861d770" },
+  "nvim-exec": { "branch": "main", "commit": "d3d7aaf4b093b140d49d03c82ce0cb55472ea0cb" },
   "nvim-lint": { "branch": "master", "commit": "efc6fc83f0772283e064c53a8f9fb5645bde0bc0" },
   "nvim-lsp-file-operations": { "branch": "master", "commit": "92a673de7ecaa157dd230d0128def10beb56d103" },
   "nvim-lspconfig": { "branch": "master", "commit": "53a3c6444ec5006b567071614c83edc8ad651f6d" },
