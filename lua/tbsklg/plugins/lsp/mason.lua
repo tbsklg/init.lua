@@ -24,6 +24,7 @@ return {
                 "cssls",
                 "lua_ls",
                 "pyright",
+                "jsonls",
             },
 
             automatic_installation = true,
